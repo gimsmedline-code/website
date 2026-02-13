@@ -124,6 +124,53 @@ export default function About() {
         </div>
       </section>
 
+      {/* Quality & Certifications Section */}
+      <section className="py-16 md:py-24 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-12 text-center">
+            Commitment to Quality & Standards
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="p-8 bg-white border border-border rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                <span className="text-2xl font-bold text-accent">ISO</span>
+              </div>
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                ISO 13485:2016
+              </h3>
+              <p className="text-muted-foreground">
+                Certified for Medical Devices Quality Management Systems, ensuring
+                consistent design, development, and production.
+              </p>
+            </div>
+            <div className="p-8 bg-white border border-border rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                <span className="text-2xl font-bold text-accent">CE</span>
+              </div>
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                CE Certified
+              </h3>
+              <p className="text-muted-foreground">
+                Products compliant with European health, safety, and environmental
+                protection standards for medical devices.
+              </p>
+            </div>
+            <div className="p-8 bg-white border border-border rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                <span className="text-2xl font-bold text-accent">GMP</span>
+              </div>
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                WHO GMP
+              </h3>
+              <p className="text-muted-foreground">
+                Manufacturing practices adhering to Good Manufacturing Practice
+                guidelines ensuring consistent quality standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Professional Relationships Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">

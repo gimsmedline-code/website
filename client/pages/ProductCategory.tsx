@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { PRODUCTS } from "../lib/products";
 
 const CATEGORIES = {
   "cardiac-surgery": {
@@ -95,47 +96,45 @@ export default function ProductCategory() {
             Available Products
           </h2>
 
-          <div className="bg-background p-12 rounded-lg border border-border text-center mb-12">
-            <h3 className="text-xl font-semibold text-primary mb-4">
-              Products Coming Soon
-            </h3>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              We are currently curating the finest products for{" "}
-              {categoryData.name.toLowerCase()}. Our team is working to ensure
-              each product meets our rigorous clinical and quality standards.
-            </p>
-          </div>
-
-          {/* Placeholder for future product listings */}
-          <div className="grid md:grid-cols-3 gap-6 opacity-50">
-            {[1, 2, 3].map((i) => (
+          {/* Products Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {PRODUCTS.filter((p) => p.category === category).map((product) => (
               <div
-                key={i}
-                className="p-6 bg-white border border-border rounded-lg"
+                key={product.id}
+                className="group bg-white border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-200"
               >
-                <h3 className="text-lg font-semibold text-primary mb-3">
-                  Product Name
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Product description will appear here
-                </p>
-                <div className="flex gap-2">
-                  <button
-                    disabled
-                    className="flex-1 px-4 py-2 bg-primary text-primary-foreground text-sm rounded opacity-50 cursor-not-allowed"
-                  >
-                    Brochure
-                  </button>
-                  <button
-                    disabled
-                    className="flex-1 px-4 py-2 border border-primary text-primary text-sm rounded opacity-50 cursor-not-allowed"
-                  >
-                    Enquire
-                  </button>
+                <div className="h-64 overflow-hidden relative">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-primary mb-3">
+                    {product.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                    {product.description}
+                  </p>
+                  <div className="flex gap-3">
+                    <Link
+                      to="/contact"
+                      className="flex-1 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded hover:bg-opacity-90 transition-all text-center"
+                    >
+                      Enquire
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+
+          {PRODUCTS.filter((p) => p.category === category).length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-muted-foreground">No products listed in this category yet. Please contact us for the full catalog.</p>
+            </div>
+          )}
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CATEGORY_IMAGES } from "../lib/products";
 
 const PRODUCT_CATEGORIES = [
   {
@@ -68,16 +69,24 @@ export default function Products() {
               <Link
                 key={category.path}
                 to={category.path}
-                className="group h-full p-6 bg-white border border-border rounded-lg hover:border-accent hover:shadow-lg transition-all duration-200"
+                className="group h-full bg-white border border-border rounded-lg hover:border-accent hover:shadow-lg transition-all duration-200 overflow-hidden flex flex-col"
               >
-                <div className="flex flex-col h-full">
+                <div className="h-48 overflow-hidden relative">
+                  <img
+                    src={CATEGORY_IMAGES[category.path.split("/").pop() || ""]}
+                    alt={category.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
+                </div>
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-semibold text-primary group-hover:text-accent transition-colors mb-3">
                     {category.name}
                   </h3>
                   <p className="text-sm text-muted-foreground flex-grow">
                     {category.description}
                   </p>
-                  <div className="mt-4 text-accent group-hover:translate-x-1 transition-transform">
+                  <div className="mt-4 text-accent group-hover:translate-x-1 transition-transform self-end">
                     →
                   </div>
                 </div>
