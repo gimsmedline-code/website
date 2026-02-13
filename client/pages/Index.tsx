@@ -18,18 +18,24 @@ export default function Index() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <section className="relative py-20 md:py-32 overflow-hidden min-h-[600px] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2053&ixlib=rb-4.0.3"
+            alt="Medical background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/40" />
+        </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-primary mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-6 leading-tight">
               Advancing Clinical Outcomes Through Thoughtfully Selected Medical
               Products
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
               At GIMS MEDLINE, we focus on one thing that truly matters in
               healthcare — clinical reliability. Every product we represent is
               chosen with a deep understanding of how it performs in real
@@ -39,13 +45,13 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/products"
-                className="px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-200 text-center inline-block"
+                className="px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-200 text-center inline-block"
               >
                 Explore Products
               </Link>
               <Link
                 to="/contact"
-                className="px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-200 text-center inline-block"
+                className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-all duration-200 text-center inline-block"
               >
                 Contact Us
               </Link>
@@ -197,8 +203,15 @@ export default function Index() {
       </section>
 
       {/* Trust Statement Banner */}
-      <section className="py-16 md:py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 md:py-32 bg-primary text-primary-foreground overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1579684385180-60b8b2cb1e3e?auto=format&fit=crop&q=80&w=2675&ixlib=rb-4.0.3"
+            alt="Medical background"
+            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <p className="text-xl md:text-2xl font-semibold leading-relaxed">
               GIMS MEDLINE stands for thoughtful selection, professional

@@ -90,22 +90,32 @@ export default function Contact() {
               <div className="space-y-6">
                 <div>
                   <h3 className="font-semibold text-primary mb-2">
-                    Company Name
-                  </h3>
-                  <p className="text-muted-foreground">GIMS MEDLINE</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-primary mb-2">
-                    Business Type
-                  </h3>
-                  <p className="text-muted-foreground">Healthcare Solutions</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-primary mb-2">
-                    Service Areas
+                    Address
                   </h3>
                   <p className="text-muted-foreground">
-                    Medical products across multiple specialties
+                    Saravanampatti, Coimbatore,
+                    <br />
+                    Tamil Nadu, India
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-2">
+                    Phone
+                  </h3>
+                  <p className="text-muted-foreground">+91 98765 43210</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-2">
+                    Email
+                  </h3>
+                  <p className="text-muted-foreground">contact@gimsmedline.com</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-2">
+                    Business Hours
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Mon - Sat: 9:00 AM - 6:00 PM
                   </p>
                 </div>
               </div>
@@ -220,15 +230,16 @@ export default function Contact() {
           <h2 className="text-2xl md:text-3xl font-bold font-display text-primary mb-8">
             Locate Us
           </h2>
-          <div className="w-full h-96 bg-border rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-muted-foreground mb-4">
-                Map integration will be available here
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Contact us directly for location details
-              </p>
-            </div>
+          <div className="w-full h-96 bg-border rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://maps.google.com/maps?q=Saravanampatti,%20Coimbatore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
