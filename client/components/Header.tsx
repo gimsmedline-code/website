@@ -41,9 +41,13 @@ export function Header() {
           {/* Logo */}
           <Link
             to="/"
-            className="text-xl font-bold text-primary font-display tracking-tight"
+            className="flex items-center gap-2"
           >
-            GIMS MEDLINE
+            <img
+              src="/logo.jpeg"
+              alt="GIMS MEDLINE"
+              className="h-20 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,11 +56,10 @@ export function Header() {
               <div key={link.path} className="relative group">
                 <Link
                   to={link.path}
-                  className={`px-4 py-2 text-sm font-medium transition-colors ${
-                    isActive(link.path)
+                  className={`px-4 py-2 text-sm font-medium transition-colors ${isActive(link.path)
                       ? "text-primary"
                       : "text-foreground hover:text-primary"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -139,11 +142,10 @@ export function Header() {
                   <Link
                     to={link.path}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`block px-4 py-3 text-sm font-medium transition-colors ${
-                      isActive(link.path)
+                    className={`block px-4 py-3 text-sm font-medium transition-colors ${isActive(link.path)
                         ? "text-primary bg-background"
                         : "text-foreground hover:text-primary hover:bg-background"
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </Link>

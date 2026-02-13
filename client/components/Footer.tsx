@@ -33,9 +33,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Column 1: Logo & Tagline */}
           <div>
-            <h3 className="text-xl font-bold font-display mb-2">
-              GIMS MEDLINE
-            </h3>
+            <Link to="/" className="block mb-4">
+              <img
+                src="/logo.jpeg"
+                alt="GIMS MEDLINE"
+                className="h-12 md:h-16 lg:h-20 w-auto object-contain"
+              />
+            </Link>
             <p className="text-sm text-primary-foreground/80">
               Clinical excellence through thoughtfully selected medical products
             </p>
