@@ -17,6 +17,8 @@ import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 const queryClient = new QueryClient();
 
 export default function App() {
@@ -26,6 +28,7 @@ export default function App() {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-grow">
