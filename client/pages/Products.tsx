@@ -54,9 +54,11 @@ export default function Products() {
           <h1 className="text-4xl md:text-5xl font-bold font-display text-primary mb-6">
             Our Product Portfolio
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl">
-            Carefully curated medical solutions across multiple healthcare
-            specialties
+          <p className="text-lg text-muted-foreground mb-6">
+            At GIMS MEDLINE, our product portfolio reflects a deliberate commitment to clinical precision, safety, and performance. We offer carefully curated medical solutions across multiple healthcare specialties, ensuring that every product we represent meets the practical demands of modern clinical environments. Our focus is not simply on supply, but on supporting clinical excellence through thoughtfully selected medical devices and disposables.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            We collaborate with both domestic manufacturers and internationally sourced brands to ensure access to advanced medical technologies and globally recognized quality benchmarks. Select products are imported and meet applicable international certifications, allowing healthcare providers to benefit from innovations aligned with evolving global standards.
           </p>
         </div>
       </section>

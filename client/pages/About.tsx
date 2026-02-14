@@ -15,17 +15,9 @@ export default function About() {
       {/* Intro Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             <p className="text-xl text-foreground mb-8 leading-relaxed">
-              GIMS MEDLINE is a healthcare solutions organization committed to
-              supporting modern clinical practice through a carefully curated
-              portfolio of medical disposables and devices.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We understand that healthcare professionals demand more than
-              product availability. They require consistency, reliability, and
-              solutions that integrate seamlessly into existing clinical
-              workflows.
+              GIMS MEDLINE is a healthcare solutions organization dedicated to strengthening modern clinical practice through a thoughtfully curated portfolio of medical devices and disposables. We operate with a clear understanding that healthcare institutions require more than product availability. They require reliability, regulatory assurance, and solutions that seamlessly integrate into established clinical workflows.
             </p>
           </div>
         </div>
@@ -39,85 +31,38 @@ export default function About() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12">
+            {/* Left Column: Approach & Dependability */}
             <div>
               <h3 className="text-xl font-semibold text-primary mb-6">
                 Our Approach
               </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
-                    <span className="text-accent font-bold text-sm">✓</span>
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">
-                      Procedural Performance
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Reliability and precision in clinical settings
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
-                    <span className="text-accent font-bold text-sm">✓</span>
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">
-                      Consistency
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Quality standards that don't vary
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
-                    <span className="text-accent font-bold text-sm">✓</span>
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">
-                      Integration
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Ease of incorporation into clinical workflows
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
-                    <span className="text-accent font-bold text-sm">✓</span>
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">
-                      Professional Acceptance
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Trust from healthcare professionals
-                    </p>
-                  </div>
-                </li>
-              </ul>
+              <div className="space-y-6 text-muted-foreground leading-relaxed">
+                <p>
+                  Our approach is rooted in supporting clinical excellence. Every product is selected with careful attention to quality standards, material integrity, sterility assurance, and consistent performance in real-world hospital environments. We serve key therapeutic specialties including Cardiothoracic, Interventional Radiology, Critical Care, providing solutions that contribute to diagnostic precision, procedural efficiency, and enhanced patient safety.
+                </p>
+                <p>
+                  Beyond product selection, GIMS MEDLINE places strong emphasis on operational dependability. We recognize that in healthcare, timely availability directly impacts patient care. Our logistics and supply processes are structured to ensure dependable and on-time delivery, enabling hospitals and healthcare providers to maintain uninterrupted clinical operations.
+                </p>
+              </div>
             </div>
 
+            {/* Right Column: Sourcing & Vision (Product Standards) */}
             <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-8 rounded-lg">
               <h3 className="text-xl font-semibold text-primary mb-6">
-                Product Standards
+                Product Standards & Strategy
               </h3>
-              <p className="text-foreground mb-6 leading-relaxed">
-                Our portfolio includes both domestically sourced and imported
-                medical products selected to meet evolving healthcare
-                requirements.
-              </p>
-              <p className="text-foreground mb-6 leading-relaxed">
-                Several products we deal with are manufactured in facilities
-                holding European regulatory approvals, reflecting
-                internationally recognized compliance standards.
-              </p>
-              <div className="pt-6 border-t border-border">
-                <p className="text-sm text-muted-foreground">
-                  Every selection is driven by clinical evidence and healthcare
-                  provider feedback, not marketing considerations.
+              <div className="space-y-6">
+                <p className="text-foreground leading-relaxed">
+                  Our sourcing strategy combines partnerships with established domestic manufacturers and internationally recognized brands. By integrating both locally manufactured and imported products that meet applicable regulatory and international certification standards, we provide access to technologies aligned with evolving global healthcare benchmarks.
                 </p>
+                <p className="text-foreground leading-relaxed">
+                  As healthcare requirements continue to advance, we remain agile in expanding and refining our portfolio. Our objective is to serve as a reliable distribution partner, delivering medical solutions that uphold clinical standards, support institutional efficiency, and contribute meaningfully to improved patient outcomes.
+                </p>
+                <div className="pt-6 border-t border-border">
+                  <p className="text-lg font-serif italic text-primary font-medium text-center bg-white/50 p-4 rounded-lg shadow-sm">
+                    "At GIMS MEDLINE, precision in product selection, integrity in operations, and commitment to timely service define the foundation of our work."
+                  </p>
+                </div>
               </div>
             </div>
           </div>

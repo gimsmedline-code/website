@@ -93,22 +93,47 @@ export default function Contact() {
                     Address
                   </h3>
                   <p className="text-muted-foreground">
-                    Saravanampatti, Coimbatore,
+                    Plot no.19&20, Hanuman Colony,
                     <br />
-                    Tamil Nadu, India
+                    Injambakkam, Chennai 600 115.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary mb-2">
                     Phone
                   </h3>
-                  <p className="text-muted-foreground">+91 98765 43210</p>
+                  <p className="text-muted-foreground">
+                    <a href="tel:+918015873937" className="hover:text-primary transition-colors">
+                      +91 80158 73937
+                    </a>
+                  </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary mb-2">
                     Email
                   </h3>
-                  <p className="text-muted-foreground">contact@gimsmedline.com</p>
+                  <div className="text-muted-foreground space-y-1">
+                    <p>
+                      <a href="mailto:info@gimsmedline.com" className="hover:text-primary transition-colors">
+                        info@gimsmedline.com
+                      </a>
+                    </p>
+                    <p>
+                      <a href="mailto:admin@gimsmedline.com" className="hover:text-primary transition-colors">
+                        admin@gimsmedline.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-2">
+                    Website
+                  </h3>
+                  <p className="text-muted-foreground">
+                    <a href="http://www.gimsmedline.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                      www.gimsmedline.com
+                    </a>
+                  </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary mb-2">
@@ -232,7 +257,7 @@ export default function Contact() {
           </h2>
           <div className="w-full h-96 bg-border rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://maps.google.com/maps?q=Saravanampatti,%20Coimbatore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Hanuman%20Colony,%20Injambakkam,%20Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

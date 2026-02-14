@@ -85,14 +85,30 @@ export function Footer() {
             <div className="text-sm text-primary-foreground/80 space-y-2">
               <p>GIMS MEDLINE</p>
               <p>Healthcare Solutions</p>
-              <p className="text-primary-foreground/70">
-                <Link
-                  to="/contact"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  Get in Touch
-                </Link>
-              </p>
+              <p>Plot no.19&20, Hanuman Colony,</p>
+              <p>Injambakkam, Chennai 600 115.</p>
+              <div className="pt-2 space-y-1">
+                <p>
+                  <a href="tel:+918015873937" className="hover:text-primary-foreground transition-colors">
+                    +91 80158 73937
+                  </a>
+                </p>
+                <p>
+                  <a href="mailto:info@gimsmedline.com" className="hover:text-primary-foreground transition-colors">
+                    info@gimsmedline.com
+                  </a>
+                </p>
+                <p>
+                  <a href="mailto:admin@gimsmedline.com" className="hover:text-primary-foreground transition-colors">
+                    admin@gimsmedline.com
+                  </a>
+                </p>
+                <p>
+                  <a href="http://www.gimsmedline.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                    www.gimsmedline.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
