@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 @layer base {
+
   /**
    * Tailwind CSS theme
    * tailwind.config.ts expects the following color variables to be expressed as HSL values.
@@ -13,80 +14,74 @@
   */
   :root {
     --background: 210 40% 98%;
-    --foreground: 210 8% 10%;
+    --foreground: 210 12% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 8% 10%;
+    --card-foreground: 210 12% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 8% 10%;
+    --popover-foreground: 210 12% 16%;
 
-    --primary: 210 61% 16%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 193 78% 16%;
+    --primary-foreground: 190 20% 98%;
 
-    --secondary: 204 47% 39%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 195 56% 36%;
+    --secondary-foreground: 190 20% 98%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 207 8% 45%;
+    --muted: 210 40% 95%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 177 55% 52%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 180 68% 41%;
+    --accent-foreground: 190 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 210 61% 16%;
+    --border: 214 32% 90%;
+    --input: 214 32% 90%;
+    --ring: 193 78% 16%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 196 68% 6%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 196 68% 6%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 196 68% 6%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 190 20% 98%;
+    --primary-foreground: 193 78% 16%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 195 56% 36%;
+    --secondary-foreground: 190 20% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 195 32% 18%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 180 68% 41%;
+    --accent-foreground: 190 20% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 195 32% 18%;
+    --input: 195 32% 18%;
+    --ring: 180 68% 41%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -104,7 +99,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    scroll-behavior: smooth;
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {

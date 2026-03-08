@@ -44,9 +44,9 @@ export function Header() {
             className="flex items-center gap-2"
           >
             <img
-              src="/logo.jpeg"
+              src="/logo.svg"
               alt="GIMS MEDLINE"
-              className="h-20 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </Link>
 
@@ -56,9 +56,9 @@ export function Header() {
               <div key={link.path} className="relative group">
                 <Link
                   to={link.path}
-                  className={`px-4 py-2 text-sm font-medium transition-colors ${isActive(link.path)
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
+                  className={`px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors ${isActive(link.path)
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
                     }`}
                 >
                   {link.name}
@@ -143,8 +143,8 @@ export function Header() {
                     to={link.path}
                     onClick={() => setMobileMenuOpen(false)}
                     className={`block px-4 py-3 text-sm font-medium transition-colors ${isActive(link.path)
-                        ? "text-primary bg-background"
-                        : "text-foreground hover:text-primary hover:bg-background"
+                      ? "text-primary bg-background"
+                      : "text-foreground hover:text-primary hover:bg-background"
                       }`}
                   >
                     {link.name}

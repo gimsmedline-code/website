@@ -20,22 +20,22 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden min-h-[600px] flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-primary">
           <img
-            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2053&ixlib=rb-4.0.3"
+            src="/hero-bg.png"
             alt="Medical background"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-60 mix-blend-overlay"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-transparent" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-6 leading-tight">
+          <div className="max-w-3xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-6 leading-tight drop-shadow-md">
               Advancing Clinical Outcomes Through Thoughtfully Selected Medical
               Products
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed max-w-2xl font-medium">
               At GIMS MEDLINE, we focus on one thing that truly matters in
               healthcare — clinical reliability. Every product we represent is
               chosen with a deep understanding of how it performs in real
@@ -45,13 +45,13 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/products"
-                className="px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-200 text-center inline-block"
+                className="px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-opacity-90 hover:scale-105 transition-all duration-300 text-center inline-block shadow-lg"
               >
                 Explore Products
               </Link>
               <Link
                 to="/contact"
-                className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-all duration-200 text-center inline-block"
+                className="px-8 py-3 border-2 border-white/80 text-white font-semibold rounded-lg hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 text-center inline-block"
               >
                 Contact Us
               </Link>
