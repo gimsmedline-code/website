@@ -44,7 +44,7 @@ export function Header() {
             className="flex items-center gap-2"
           >
             <img
-              src="/logo.svg"
+              src="/gims-medline-logo.png"
               alt="GIMS MEDLINE"
               className="h-16 w-auto object-contain"
             />

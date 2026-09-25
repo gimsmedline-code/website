@@ -33,11 +33,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Column 1: Logo & Tagline */}
           <div>
-            <Link to="/" className="block mb-4 bg-white/10 p-2 rounded-lg inline-block">
+            <Link to="/" className="block mb-4  inline-block">
               <img
-                src="/logo.svg"
+                src="/gims-medline-logo.png"
                 alt="GIMS MEDLINE"
-                className="h-10 md:h-12 lg:h-14 w-auto object-contain filter brightness-0 invert"
+                className="h-13 md:h-13 lg:h-16 w-auto object-contain filter"
               />
             </Link>
             <p className="text-sm text-primary-foreground/80">
@@ -85,7 +85,7 @@ export function Footer() {
             <div className="text-sm text-primary-foreground/80 space-y-2">
               <p>GIMS MEDLINE</p>
               <p>Healthcare Solutions</p>
-              <p>Plot no.19&20, Hanuman Colony,</p>
+              <p>Plot No. 19 & 20, Hanuman Colony,</p>
               <p>Injambakkam, Chennai 600 115.</p>
               <div className="pt-2 space-y-1">
                 <p>
